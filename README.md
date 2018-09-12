@@ -13,7 +13,7 @@ docker build -it nginx-librdkafka .
 docker images | grep nginx-librdkafka
 ```
 
-* Start up the kafka, zookeeper, schema-registry and nginx containers by running the following docker compose command:>
+* Start up kafka, zookeeper, schema-registry and nginx containers by running the following docker compose command:
 ```
 docker-compose up -d
 ```

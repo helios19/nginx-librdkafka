@@ -1,5 +1,5 @@
 # nginx-librdkafka
-A full docker environment with kafka, zookeeper, nginx and schema-registry showing how to push messages to kafka using a simple curl command.
+A full docker environment with kafka, zookeeper, nginx and schema-registry showing how to push messages to kafka using a simple curl command through nginx.
 
 ### Step to build and run kafka and nginx updated with librdkafka
 

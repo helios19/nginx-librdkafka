@@ -36,7 +36,7 @@ If the message is correctly pushed into kafka a 204 (NO-CONTENT) should be retur
 
 * To check the message from kafka topic, open a kafka console topic consumer using the following command:
 ```
-docker exec broker /usr/local/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper localhost:2181 --topic my-topic --from-beginning
+docker exec broker /usr/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --zookeeper localhost:2181 --topic my-topic --from-beginning
 ```
 If everything running fine, you should be able to see the message pushed in the previous step using the above curl command.
 

@@ -5,7 +5,7 @@ A full docker environment with kafka, zookeeper, nginx and schema-registry showi
 
 * Build the nginx-librdkafka container by running the following commnand:
 ```
-docker build -it nginx-librdkafka .
+docker build -t nginx-librdkafka .
 ```
 
 * Verify this new nginx container has been properly created:
@@ -37,7 +37,7 @@ If the message is correctly pushed into kafka a 204 (NO-CONTENT) should be retur
 * To check the message from kafka topic, open a kafka console topic consumer using the following command:
 ```
 docker exec -it broker sh
-#kafka-console-consumer --bootstrap-server localhost:9092 --zookeeper localhost:2181 --topic my-topic --from-beginning
+#kafka-console-consumer --bootstrap-server localhost:9092 --zookeeper zookeeper:2181 --topic my-topic --from-beginning
 ```
 If everything running fine, you should be able to see the message pushed in the previous step using the above curl command.
 
